@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <title>Cia </title>
+</head>
+<style>
+    .navbar-nav .nav-link.active {
+        color: #fff;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    header {
+        background-color: lightgreen;
+        color: black;
+    }
+
+    header {
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+</style>
+<body>
+    <header>
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Cia Esportes</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#notícias">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#eventos">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a  class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <h1 id="notícias">Notícias</h1>
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img src="./imagens/kite-surfing-1280.jpg">
+                        <h2>Notícias dos kite-surfing</h2>
+                        <p class="h4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure nam facilis repellat, aut, dolorem est vitae numquam voluptatem.
+                        </p>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img src="./imagens/basketball-1280.jpg">
+                        <h2>Notícias do Basketball</h2>
+                        <p class="h4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nisi quas nam vero repudiandae labore sunt! Maiores, ipsa omnis.
+                        </p>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img src="./imagens/athlete-1280.jpg">
+                        <h2>Notícias do athlete</h2>
+                        <p class="h4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsum sapiente doloremque cum quos odio explicabo esse facilis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <h1 id="eventos">Eventos</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Corrida das Bike
+                            </div>
+                            <img src="./imagens/bicycle-1280.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title">Maratona dos Ciclitas</h4>
+                                <p class="card-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum illo nemo animi a magnam obcaecati accusamus distinctio at neque nisi aspernatur itaque odio assumenda blanditiis.
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Lutas de Judô
+                            </div>
+                            <img src="./imagens/men-1280.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title">Torneio de Judô</h4>
+                                <p class="card-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum illo nemo animi a magnam obcaecati accusamus distinctio at neque nisi aspernatur itaque odio assumenda blanditiis.
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Esportes na Praia
+                            </div>
+                            <img src="./imagens/sports-1280.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title">Vôlei de Praia</h4>
+                                <p class="card-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum illo nemo animi a magnam obcaecati accusamus distinctio at neque nisi aspernatur itaque odio assumenda blanditiis.
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h2 id="contato">Entre em Contato</h2>
+                    <form>
+                        <label class="form-label" for="nome">Seu nome:</label>
+                        <input class="form-control" type="text" id="nome">
+                        <label class="form-label" for="email">Seu e-mail:</label>
+                        <input class="form-control" id="email" type="email">
+                        <label class="form-check-label" for="telefone" id="telefone">Seu telefone:</label>
+                        <input class="form-control" type="telefone" id="telefone">
+                        <label class="form-label" for="mensagem">Sua mensagem:</label>
+                        <textarea class="form-control" id="mensagem"></textarea>
+                        <div class="form-check">
+                            <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do site</label>
+                            <input class="form-check-input" type="checkbox" id="aceito-termos">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <footer>
+                <p>
+                    &copy; 2024 Cia Esportes - Todos os direitos Reservados
+                </p>
+            </footer>
+        </div>
+    </header>
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
